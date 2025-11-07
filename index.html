@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroSegure IA - Vigilancia Inteligente para el Campo Moderno</title>
+
+  <!-- Fuentes y estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <img src="imagenes/logo.png" alt="AgroSegure Logo" class="logo-img">
+        <div class="logo-text"></span></div>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#plataforma">Plataforma</a></li>
+          <li><a href="#soluciones">Soluciones</a></li>
+          <li><a href="#planes">Precios</a></li>
+          <!-- <li><a href="#casos">Casos de Éxito</a></li> --> <!-- Eliminado según tu solicitud -->
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#" class="btn btn-secondary">Iniciar Sesión</a>
+        <a href="#contacto" class="btn btn-accent">Solicitar Demo</a>
+      </div>
+      <button class="hamburger-menu" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <video autoplay muted loop id="hero-video" class="hero-video">
+      <source src="imagenes/fondo.mp4" type="video/mp4">
+      Tu navegador no soporta el tag de video.
+    </video>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Vigilancia inteligente para el campo moderno</h1>
+        <p>Protegé tu producción con tecnología IoT, inteligencia artificial y análisis predictivo en una sola plataforma.</p>
+        <div class="hero-buttons">
+          <a href="#soluciones" class="btn btn-accent">Comenzar Ahora</a>
+          <a href="#" class="btn btn-secondary-outline"><i class="fas fa-play-circle"></i> Ver Video Explicativo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container stats-container">
+      <div class="stat-item">
+        <i class="fas fa-clock stat-icon"></i>
+        <span class="stat-number" data-target="24">0</span>/7
+        <div class="stat-label">Monitoreo Continuo</div>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-check-circle stat-icon"></i>
+        <span class="stat-number" data-target="99.9">0</span>%
+        <div class="stat-label">Uptime Garantizado</div>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-tachometer-alt stat-icon"></i>
+        &lt;<span class="stat-number" data-target="5">0</span>s
+        <div class="stat-label">Tiempo de Respuesta</div>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-wifi stat-icon"></i>
+        IoT
+        <div class="stat-label">Edge Computing</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SaaS-IoT Ecosystem Section -->
+  <section id="plataforma" class="saas-iot-ecosystem">
+    <div class="container">
+      <div class="section-header">
+        <h2>Ecosistema SaaS-IoT Integral con IA para la Producción Agropecuaria</h2>
+        <p>Desarrollamos una infraestructura digital unificada, capaz de integrar dispositivos IoT, cámaras, sensores y análisis de datos en tiempo real.</p>
+      </div>
+      <div class="ecosystem-features">
+        <div class="feature-card">
+          <i class="fas fa-cloud fa-3x icon-gradient"></i>
+          <h3>Todo en la Nube</h3>
+          <p>Conectá tu campo al instante. Accedé a tu sistema desde cualquier lugar con sincronización inmediata y almacenamiento seguro en la nube.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-microchip fa-3x icon-gradient"></i>
+          <h3>IoT Inteligente en Terreno</h3>
+          <p>Gateways con Raspberry Pi y ESP32 que procesan datos en tiempo real, incluso sin internet, manteniendo tus sensores y cámaras activos todo el tiempo.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-brain fa-3x icon-gradient"></i>
+          <h3>IA que Predice y Advierte</h3>
+          <p>Nuestra inteligencia artificial analiza patrones, predice riesgos y envía alertas antes de que ocurra el problema. Más control, menos imprevistos.</p>
+        </div>
+      </div>
+
+      <div class="section-header mt-5">
+        <h2>Interfaces Diseñadas para Productores</h2>
+        <p>Dashboards intuitivos con datos en tiempo real, alertas inteligentes y análisis predictivos.</p>
+      </div>
+      <div class="producer-interfaces">
+        <div class="interface-item">
+          <img src="imagenes/dashboard-watch.jpg" alt="AgroSegure Watch Dashboard">
+          <h3><i class="fas fa-eye"></i> AgroSegure Watch</h3>
+          <p>Monitoreo en tiempo real con alertas activas y sistema de doble línea de defensa perimetral.</p>
+        </div>
+        <div class="interface-item">
+          <img src="imagenes/dashboard-crop.jpg" alt="AgroSegure Crop Dashboard">
+          <h3><i class="fas fa-seedling"></i> AgroSegure Crop</h3>
+          <p>Análisis de cultivos con mapas NDVI, monitoreo de humedad del suelo y predicción de deficiencias nutricionales.</p>
+        </div>
+        <div class="interface-item">
+          <img src="imagenes/dashboard-livestock.jpg" alt="AgroSegure Livestock Dashboard">
+          <h3><i class="fas fa-cow"></i> AgroSegure Livestock</h3>
+          <p>Seguimiento GPS del ganado, análisis de salud en tiempo real y alertas de comportamiento anormal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions/Modules Section -->
+  <section id="soluciones" class="solutions-modules">
+    <div class="container">
+      <div class="section-header">
+        <h2>Integración Modular: Todo tu campo, en una sola plataforma</h2>
+        <p>Los módulos de seguridad, agricultura y monitoreo animal trabajan juntos o por separado, conectados a la nube central para brindarte control total y desde cualquier lugar.</p>
+      </div>
+      <div class="modules-grid">
+        <div class="module-card">
+          <div class="module-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>AgroSegure Watch</h3>
+          <p>Vigilancia y Seguridad Rural Inteligente.</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Sistema de vigilancia perimetral con sensores IoT, cámaras inteligentes y IA.</li>
+            <li><i class="fas fa-check-circle"></i> Detección de amenazas en tiempo real.</li>
+            <li><i class="fas fa-check-circle"></i> Sensores perimetrales PIR, radar y vibración.</li>
+            <li><i class="fas fa-check-circle"></i> Cámaras IA activadas por alerta.</li>
+            <li><i class="fas fa-check-circle"></i> Doble línea de defensa perimetral.</li>
+          </ul>
+        </div>
+        <div class="module-card">
+          <div class="module-icon"><i class="fas fa-leaf"></i></div>
+          <h3>AgroSegure Crop</h3>
+          <p>Agricultura de Precisión y Optimización de producción.</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Análisis inteligente de variables del cultivo, sensores y drones.</li>
+            <li><i class="fas fa-check-circle"></i> Monitoreo de humedad, temperatura y pH.</li>
+            <li><i class="fas fa-check-circle"></i> Análisis con drones multiespectrales.</li>
+            <li><i class="fas fa-check-circle"></i> Mapas NDVI y térmicos georreferenciados.</li>
+            <li><i class="fas fa-check-circle"></i> Predicción de rinde y alertas tempranas.</li>
+          </ul>
+        </div>
+        <div class="module-card">
+          <div class="module-icon"><i class="fas fa-horse-head"></i></div>
+          <h3>AgroSegure Livestock</h3>
+          <p>Monitoreo y Salud Animal para una gestión inteligente.</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Gestión inteligente del ganado con sensores portátiles.</li>
+            <li><i class="fas fa-check-circle"></i> Visión por IA y análisis fisiológicos para bienestar animal.</li>
+            <li><i class="fas fa-check-circle"></i> Collares IoT con GPS y sensores vitales.</li>
+            <li><i class="fas fa-check-circle"></i> Detección de comportamiento anómalo.</li>
+            <li><i class="fas fa-check-circle"></i> Monitoreo de ubicación en tiempo real, alertas de salud y trazabilidad.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Ecosystem Section -->
+  <section class="technology-ecosystem">
+    <div class="container">
+      <div class="section-header">
+        <h2>Ecosistema Tecnológico Completo</h2>
+        <p>Dispositivos IoT, sensores inteligentes y análisis en la nube trabajando en conjunto.</p>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-item">
+          <i class="fas fa-cloud-upload-alt fa-3x"></i>
+          <h3>Cloud SaaS</h3>
+          <p>Plataforma centralizada accesible desde cualquier lugar.</p>
+        </div>
+        <div class="tech-item">
+          <i class="fas fa-laptop-code fa-3x"></i>
+          <h3>IoT</h3>
+          <p>Gateways inteligentes con procesamiento local.</p>
+        </div>
+        <div class="tech-item">
+          <i class="fas fa-robot fa-3x"></i>
+          <h3>IA</h3>
+          <p>Análisis predictivo y machine learning.</p>
+        </div>
+        <div class="tech-item">
+          <i class="fas fa-mobile-alt fa-3x"></i>
+          <h3>MultiSoft</h3>
+          <p>Web, móvil y alertas en tiempo real.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support and Service Section -->
+<section class="support-service">
+  <div class="container">
+    <div class="section-header">
+      <h2>Servicio Técnico Especializado: Te acompañamos en cada paso</h2>
+      <p>No solo instalamos tecnología: te acompañamos en todo el proceso, para que todo funcione sin preocupaciones.</p>
+    </div>
+
+    <div class="support-architecture">
+      <!-- Fila 1: Proceso de Instalación -->
+      <div class="process-row">
+        <div class="process-card">
+          <div class="process-icon">
+            <i class="fas fa-clipboard-check"></i>
+          </div>
+          <img src="imagenes/01.jpg" alt="Evaluación Inicial" class="process-image">
+          <h3>Evaluación Inicial</h3>
+          <p>Analizamos tus necesidades específicas y diseñamos la solución perfecta para tu campo.</p>
+          <ul class="process-features">
+            <li><i class="fas fa-check"></i> Diagnóstico personalizado</li>
+            <li><i class="fas fa-check"></i> Planificación estratégica</li>
+            <li><i class="fas fa-check"></i> Presupuesto transparente</li>
+          </ul>
+        </div>
+
+        <div class="process-card">
+          <div class="process-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <img src="imagenes/02.jpg" alt="Instalación Profesional" class="process-image">
+          <h3>Instalación Profesional</h3>
+          <p>Nuestro equipo técnico especializado instala y configura todo el sistema en tu campo.</p>
+          <ul class="process-features">
+            <li><i class="fas fa-check"></i> Instalación en sitio</li>
+            <li><i class="fas fa-check"></i> Calibración de sensores</li>
+            <li><i class="fas fa-check"></i> Configuración personalizada</li>
+          </ul>
+        </div>
+
+        <div class="process-card">
+          <div class="process-icon">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <img src="imagenes/03.jpg" alt="Capacitación Integral" class="process-image">
+          <h3>Capacitación Integral</h3>
+          <p>Te enseñamos a usar la plataforma y aprovechar al máximo todas sus funciones.</p>
+          <ul class="process-features">
+            <li><i class="fas fa-check"></i> Entrenamiento práctico</li>
+            <li><i class="fas fa-check"></i> Manuales digitales</li>
+            <li><i class="fas fa-check"></i> Soporte inicial</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Fila 2: Soporte Continuo -->
+      <div class="process-row">
+        <div class="process-card">
+          <div class="process-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <img src="imagenes/04.jpg" alt="Soporte 24/7" class="process-image">
+          <h3>Soporte Continuo 24/7</h3>
+          <p>Estamos siempre disponibles para resolver cualquier inconveniente o duda que tengas.</p>
+          <ul class="process-features">
+            <li><i class="fas fa-check"></i> Monitoreo remoto</li>
+            <li><i class="fas fa-check"></i> Respuesta inmediata</li>
+            <li><i class="fas fa-check"></i> Múltiples canales</li>
+          </ul>
+        </div>
+
+        <div class="process-card">
+          <div class="process-icon">
+            <i class="fas fa-sync-alt"></i>
+          </div>
+          <img src="imagenes/05.jpg" alt="Mantenimiento Preventivo" class="process-image">
+          <h3>Mantenimiento Preventivo</h3>
+          <p>Revisiones periódicas para asegurar el óptimo funcionamiento de tu sistema.</p>
+          <ul class="process-features">
+            <li><i class="fas fa-check"></i> Actualizaciones automáticas</li>
+            <li><i class="fas fa-check"></i> Optimización continua</li>
+            <li><i class="fas fa-check"></i> Reportes de estado</li>
+          </ul>
+        </div>
+
+        <div class="process-card">
+          <div class="process-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <img src="imagenes/06.jpg" alt="Mejora Continua" class="process-image">
+          <h3>Mejora Continua</h3>
+          <p>Evolucionamos junto a tu negocio con nuevas funcionalidades y mejoras.</p>
+          <ul class="process-features">
+            <li><i class="fas fa-check"></i> Nuevas características</li>
+            <li><i class="fas fa-check"></i> Escalabilidad garantizada</li>
+            <li><i class="fas fa-check"></i> Innovación constante</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banner de Garantía -->
+    <div class="warranty-banner">
+      <div class="warranty-content">
+        <div class="warranty-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="warranty-text">
+          <h3>Garantía de Funcionamiento Total</h3>
+          <p>Respaldo completo, actualizaciones sin costo adicional y compromiso 100% con tu éxito productivo.</p>
+        </div>
+        <a href="#contacto" class="btn btn-accent">Solicitar Asesoría</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Exhibitions Section -->
+  <section id="casos" class="exhibitions">
+    <div class="container">
+      <div class="section-header">
+        <h2>Presentes en las principales exposiciones</h2>
+        <p>Demostramos nuestra tecnología en exposiciones agrarias y congresos nacionales e internacionales.</p>
+      </div>
+      <div class="exhibition-gallery">
+        <img src="imagenes/expo1.jpg" alt="Exposición AgroSegure 1">
+        <img src="imagenes/expo2.jpg" alt="Exposición AgroSegure 2">
+        <img src="imagenes/expo3.jpg" alt="Exposición AgroSegure 3">
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Plans Section - 6 Tarjetas Compactas -->
+<section id="planes" class="pricing-plans">
+  <div class="container">
+    <div class="section-header">
+      <h2>Soluciones Modulares para tu Campo</h2>
+      <p>Empezá con lo que necesitás hoy y escalá según crezcan tus necesidades.</p>
+    </div>
+
+    <!-- PRIMERA FILA -->
+    <div class="plans-grid-compact">
+      <!-- Watch Lite -->
+      <div class="plan-card-compact">
+        <div class="plan-header-compact">
+          <h3>Watch Lite<br><small>Solo Vigilancia</small></h3>
+          <div class="plan-price-compact">
+            <span class="currency">$</span>45<span class="period">/mes</span>
+          </div>
+          <p class="plan-subtitle-compact">Seguridad Básica</p>
+        </div>
+        <ul class="plan-features-compact">
+          <li><i class="fas fa-check"></i>Vigilancia perimetral IA</li>
+          <li><i class="fas fa-check"></i>Detección personas/vehículos</li>
+          <li><i class="fas fa-check"></i>Alertas en tiempo real</li>
+          <li><i class="fas fa-check"></i>App móvil incluida</li>
+          <li><i class="fas fa-check"></i>1 cámara IoT</li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary">Comenzar</a>
+      </div>
+
+      <!-- Watch Cloud -->
+      <div class="plan-card-compact">
+        <div class="plan-header-compact">
+          <h3>Watch Cloud<br><small>Seguridad Avanzada</small></h3>
+          <div class="plan-price-compact">
+            <span class="currency">$</span>90<span class="period">/mes</span>
+          </div>
+          <p class="plan-subtitle-compact">Todo en Seguridad</p>
+        </div>
+        <ul class="plan-features-compact">
+          <li><i class="fas fa-check"></i>Monitoreo remoto 24/7</li>
+          <li><i class="fas fa-check"></i>Hasta 4 cámaras IoT</li>
+          <li><i class="fas fa-check"></i>IA predictiva de riesgos</li>
+          <li><i class="fas fa-check"></i>Reportes automáticos</li>
+          <li><i class="fas fa-check"></i>Soporte prioritario</li>
+        </ul>
+        <a href="#contacto" class="btn btn-accent">Más Popular</a>
+      </div>
+
+      <!-- Combo Seguridad+ -->
+      <div class="plan-card-compact">
+        <div class="plan-header-compact">
+          <h3>Combo Seguridad+<br><small>Watch + Crop</small></h3>
+          <div class="plan-price-compact">
+            <span class="currency">$</span>120<span class="period">/mes</span>
+          </div>
+          <p class="plan-subtitle-compact">Ahorro 20%</p>
+        </div>
+        <ul class="plan-features-compact">
+          <li><i class="fas fa-check"></i>Todo Watch Cloud +</li>
+          <li><i class="fas fa-check"></i>Agricultura de precisión</li>
+          <li><i class="fas fa-check"></i>Monitoreo con drones</li>
+          <li><i class="fas fa-check"></i>Análisis NDVI y térmico</li>
+          <li><i class="fas fa-check"></i>Predicción rendimiento</li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary">Mejor Precio</a>
+      </div>
+    </div>
+
+    <!-- SEGUNDA FILA -->
+    <div class="plans-grid-compact" style="margin-top: 25px;">
+      <!-- Combo Ganadero -->
+      <div class="plan-card-compact">
+        <div class="plan-header-compact">
+          <h3>Combo Ganadero<br><small>Watch + Livestock</small></h3>
+          <div class="plan-price-compact">
+            <span class="currency">$</span>130<span class="period">/mes</span>
+          </div>
+          <p class="plan-subtitle-compact">Ahorro 25%</p>
+        </div>
+        <ul class="plan-features-compact">
+          <li><i class="fas fa-check"></i>Todo Watch Cloud +</li>
+          <li><i class="fas fa-check"></i>Monitoreo ganado GPS</li>
+          <li><i class="fas fa-check"></i>Collares IoT con sensores</li>
+          <li><i class="fas fa-check"></i>Alertas de salud animal</li>
+          <li><i class="fas fa-check"></i>Cercas virtuales</li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary">Ideal Ganadería</a>
+      </div>
+
+      <!-- Suite Agro Complete -->
+      <div class="plan-card-compact">
+        <div class="plan-header-compact">
+          <h3>Suite Agro Complete<br><small>Todos los Módulos</small></h3>
+          <div class="plan-price-compact">
+            <span class="currency">$</span>199<span class="period">/mes</span>
+          </div>
+          <p class="plan-subtitle-compact">Ahorro 35%</p>
+        </div>
+        <ul class="plan-features-compact">
+          <li><i class="fas fa-check"></i>Watch Cloud Completo</li>
+          <li><i class="fas fa-check"></i>AgroSegure Crop Premium</li>
+          <li><i class="fas fa-check"></i>AgroSegure Livestock Pro</li>
+          <li><i class="fas fa-check"></i>Dashboard unificado</li>
+          <li><i class="fas fa-check"></i>Soporte dedicado 24/7</li>
+        </ul>
+        <a href="#contacto" class="btn btn-accent">Máxima Eficiencia</a>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="plan-card-compact">
+        <div class="plan-header-compact">
+          <h3>Enterprise<br><small>Múltiples Campos</small></h3>
+          <div class="plan-price-compact">
+            Personalizado
+          </div>
+          <p class="plan-subtitle-compact">Para Empresas</p>
+        </div>
+        <ul class="plan-features-compact">
+          <li><i class="fas fa-check"></i>Todos los módulos Premium</li>
+          <li><i class="fas fa-check"></i>Múltiples campos y usuarios</li>
+          <li><i class="fas fa-check"></i>API personalizada</li>
+          <li><i class="fas fa-check"></i>Dashboard empresarial</li>
+          <li><i class="fas fa-check"></i>Capacitación incluida</li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary">Contactar Ventas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA - Transform Your Farm -->
+<section class="cta-transform">
+  <div class="container">
+    <div class="cta-content">
+      <div class="cta-text">
+        <h2>¿Listo para revolucionar tu campo?</h2>
+        <p>Solicitá una demostración personalizada y descubrí cómo AgroSegure IA puede transformar tu producción agropecuaria con tecnología de punta.</p>
+
+        <div class="cta-buttons">
+          <a href="#contacto" class="btn btn-accent">
+            <i class="fas fa-calendar-check"></i>
+            Solicitar Demo Gratuita
+          </a>
+          <a href="#planes" class="btn btn-secondary-outline">
+            <i class="fas fa-eye"></i>
+            Ver Planes y Precios
+          </a>
+        </div>
+
+        <div class="cta-features">
+          <div class="cta-feature">
+            <i class="fas fa-bolt"></i>
+            <span>Demo en 24 horas</span>
+          </div>
+          <div class="cta-feature">
+            <i class="fas fa-user-tie"></i>
+            <span>Asesoramiento personalizado</span>
+          </div>
+          <div class="cta-feature">
+            <i class="fas fa-rocket"></i>
+            <span>Implementación rápida</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-image">
+        <img src="imagenes/cta-devices.png" alt="Dispositivos AgroSegure IA" />
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contacto" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contactanos</h2>
+        <p>Estamos listos para ayudarte a llevar tu producción al siguiente nivel.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3>Información de Contacto</h3>
+          <p><i class="fas fa-envelope"></i> agrosegure.ia@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +54 (9) 3413724605</p>
+          <p><i class="fas fa-phone"></i> +54 (9) 3513032765</p>
+          <p><i class="fas fa-map-marker-alt"></i> Rosario, Santa Fe | Córdoba Capital, Ciudad de Córdoba</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-card">
+          <h3>Envíanos un Mensaje</h3>
+          <form>
+            <div class="form-group">
+              <label for="name">Nombre Completo</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Teléfono (opcional)</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="message">Tu Mensaje</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-accent">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <img src="imagenes/logo.png" alt="AgroSegure Logo" class="logo-img">
+          <div class="logo-text"><span></span></div>
+        </a>
+        <p>Vigilancia Inteligente para el Campo.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Navegación</h3>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#plataforma">Plataforma</a></li>
+          <li><a href="#soluciones">Soluciones</a></li>
+          <li><a href="#planes">Precios</a></li>
+          <li><a href="#casos">Casos de Éxito</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h3>Recursos</h3>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Soporte</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Términos de Servicio</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact-info">
+        <h3>Contáctanos</h3>
+        <p><i class="fas fa-envelope"></i> agrosegure.ia@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Rosario y Córdoba, Argentina</p>
+        <div class="social-links-footer">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 AgroSegure IA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
